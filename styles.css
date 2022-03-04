@@ -1,0 +1,99 @@
+body {
+  background-color: #396EB0;
+
+}
+
+.main-wrapper{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#game-title{
+  margin-top: 15px;
+  font-size: 2.5rem;
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#name{
+  writing-mode:  tb-rl;
+  text-orientation: upright;
+  left: 20px;
+  top: 20%;
+  position: absolute;
+  letter-spacing: 80px;
+  font-size: 2rem;
+}
+
+
+.grid-container{
+  position: absolute;
+  top: 13%;
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  grid-gap: 75px;
+}
+
+.btn {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin: auto;
+  border-radius: 50px;
+  box-shadow: 5px 10px 5px 5px black;
+}
+
+#red{
+  background-color: red;
+}
+
+#blue{
+  background-color: blue;
+}
+
+#yellow{
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
+
+#motivationTextLine{
+  position: absolute;
+  bottom: 50%;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.motivationAnimation{
+}
+
+.animation{
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media only screen and (min-width: 2000px) {
+  .grid-container {
+    width: 40%;
+    top: 25%;
+  }
+  .btn{
+    height: 325px;
+    width: 325px;
+  }
+  #game-title{
+    margin-top: 125px;
+  }
+}
+
+@media (max-width: 200px) {
+  #name{
+    color: red;
+    display: none;
+  }
+}
